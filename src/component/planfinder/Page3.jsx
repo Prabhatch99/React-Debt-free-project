@@ -23,7 +23,7 @@ function Page3(props) {
                     </li>
                 </ul>
                 
-                <div  className='text-center'>
+                <div  className='text-center mb-5'>
                     <p className=" btn-dark  mt-5 text-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                         Why is this important? +
                     </p>
