@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Head from './component/Head'
+import Page2 from './component/planfinder/Page2'
+import Page3 from './component/planfinder/Page3'
+import Page4 from './component/planfinder/Page4'
+import Planfinder from './component/planfinder/Planfinder'
+import Thankyou from './component/planfinder/Thankyou'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Head />} />
+        <Route path='/Planfinder' element={<Planfinder />} />
+        <Route path='/Page2' element={<Page2 />} />
+        <Route path='/Page3' element={<Page3 />} />
+        <Route path='/Page4' element={<Page4 />} />
+        <Route path='/Thankyou' element={<Thankyou />} />
+
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
